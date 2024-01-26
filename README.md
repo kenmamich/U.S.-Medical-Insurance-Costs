@@ -146,7 +146,6 @@ print(average_children(children))
 <p>The average number of children per person is 1.09.</p>
 
 ```
-#Finding the total number of male and female people in the data set as well as the percentage makeup of the dataset for each sex.
 number_of_males = 0
 number_of_females = 0
 
@@ -159,9 +158,7 @@ for sex in sexes:
 percent_male = (number_of_males /  len(sexes)) * 100
 
 percent_female = (number_of_females / len(sexes)) * 100
-
-print('The percent of the people identifying as male is ' + str(round(percent_male,2)) +'% a total of '+ str(number_of_males) +' males in dataset.' )
-print('The percent of people identifying as female is '+ str(round(percent_female,2))+'% a total of ' + str(number_of_females) +' females in dataset.')
 ```
 
-<p></p>
+<p>Finds percentage of males and females, as well as, how many are actually in insurance.csv</p>
+<p>50.52% a total of 676 males and 49.48% a total of 662 females</p>
