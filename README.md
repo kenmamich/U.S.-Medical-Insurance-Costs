@@ -146,6 +146,12 @@ print(average_children(children))
 <p>The average number of children per person is 1.09.</p>
 
 ```
+print(average_cost(insurance_charges))
+```
+
+<p>The average insurance charge is $13270.42.</p>
+
+```
 number_of_males = 0
 number_of_females = 0
 
