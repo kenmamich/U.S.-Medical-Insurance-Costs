@@ -280,8 +280,8 @@ for sex in sex_cost.keys():
 male_average = male_total_cost / len(sex_cost['male'])
 female_average = female_total_cost / len(sex_cost['female'])
 
-print("The average insurance cost for smoker patients is "+ str(round(smoker_average,2))+'.')
-print('The average insurance cost for nonsmoker patients is ' + str(round(nonsmoker_average,2))+'.')
+print("The average insurance cost for male patients is "+ str(round(male_average,2))+'.')
+print('The average insurance cost for female patients is ' + str(round(female_average,2))+'.')
 ```
 
 <p>Finds the average cost of insurance charges for males and females.</p>
@@ -301,6 +301,9 @@ for ident in smoker_cost.keys():
             
 smoker_average = male_total_cost / len(smoker_cost['yes'])
 nonsmoker_average = female_total_cost / len(smoker_cost['no'])
+
+print("The average insurance cost for smoker patients is "+ str(round(smoker_average,2))+'.')
+print('The average insurance cost for nonsmoker patients is ' + str(round(nonsmoker_average,2))+'.')
 ```
 
 <p>Finds the average cost of insurance charges for smokers and nonsmokers.</p>
