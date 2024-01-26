@@ -126,3 +126,15 @@ def average_cost(insurance_charges):
 ```
 
 <h3>Analysis</h3>
+
+```
+print(average_age(ages))
+```
+
+<p>The average age is 39.21 years old.</p>
+
+```
+print(average_bmi(bmis))
+```
+
+<p>The average BMI is 30.66.</p>
