@@ -306,7 +306,7 @@ for region in region_dict:
 
 
 <p>Finds the average insurance charge for each region.</p>
-<p>The average insurance cost for the southwest region is $12346.94, southeast is $14735.41, northwest is $12417.58, and northeast is $13406.38. There does not appear to be too much of a difference between each region in terms of insurance costs. But, on average, according to insurance.csv, the southeast pays the most and the southwest pays the least.</p>
+<p>The average insurance cost for southwest is $12346.94, southeast is $14735.41, northwest is $12417.58, and northeast is $13406.38. There does not appear to be too much of a difference between each region in terms of insurance costs. But, on average, according to insurance.csv, the southeast pays the most and the southwest pays the least.</p>
 
 
 
