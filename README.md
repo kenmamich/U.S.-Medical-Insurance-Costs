@@ -1,4 +1,4 @@
-<h1>U.S. Medical Insurance</h1>
+<h1>U.S. Medical Insurance Costs</h1>
 <p>In this project, a CSV file with medical insurance costs was investigated using Python skills. The goal of this project was to analyze various attributes within insurance.csv to learn more about the patient information in the file and gain insight into potential use cases for the dataset.</p>
 
 <h2>Installation</h2>
