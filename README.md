@@ -98,7 +98,7 @@ def average_bmi(bmis):
 
     return 'The average BMI is ' + str(round(average_bmi,2)) + '.'
 ```
-<p>Developer defined function for finding the average number of children per person</p>
+<p>Developer defined function for finding the average number of children per person.</p>
 
 ```
 def average_children(children):
@@ -111,7 +111,7 @@ def average_children(children):
     return 'The average number of children per person is '+ str(round(average_number_of_children,2))+'.'
 ```
 
-<p>Developer defined function for finding the average cost</p>
+<p>Developer defined function for finding the average cost.</p>
 
 ```
 def average_cost(insurance_charges):
