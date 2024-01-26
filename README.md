@@ -1,6 +1,9 @@
 <h1>U.S. Medical Insurance</h1>
 <p>In this project, a CSV file with medical insurance costs was investigated using Python skills. The goal of this project was to analyze various attributes within insurance.csv to learn more about the patient information in the file and gain insight into potential use cases for the dataset.</p>
 
+<h2>Installation</h2>
+<p>Due to the project being completed using Jupyter Notebook, there is no need to install my project. All you need to do is click on </p>
+
 
 <h2>Documentation</h2>
 <h3>Library</h3>
@@ -304,4 +307,6 @@ for region in region_dict:
 
 <p>Finds the average insurance charge for each region.</p>
 <p>The average insurance cost for the southwest region is $12346.94, southeast is $14735.41, northwest is $12417.58, and northeast is $13406.38. There does not appear to be too much of a difference between each region in terms of insurance costs. But, on average, according to insurance.csv, the southeast pays the most and the southwest pays the least.</p>
+
+
 
