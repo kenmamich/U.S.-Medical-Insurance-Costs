@@ -167,6 +167,9 @@ for sex in sexes:
 percent_male = (number_of_males /  len(sexes)) * 100
 
 percent_female = (number_of_females / len(sexes)) * 100
+
+print('The percent of the people identifying as male is ' + str(round(percent_male,2)) +'% a total of '+ str(number_of_males) +' males in dataset.' )
+print('The percent of people identifying as female is '+ str(round(percent_female,2))+'% a total of ' + str(number_of_females) +' females in dataset.')
 ```
 
 <p>Finds percentage of males and females, as well as, how many are actually in insurance.csv.</p>
@@ -184,6 +187,9 @@ for status in smoker_statuses:
             
 percent_smoker = (number_of_smokers / len(smoker_statuses)) * 100
 percent_nonsmoker = (number_of_nonsmokers / len(smoker_statuses)) * 100
+
+print('The percent of the people who identify as a smoker is ' + str(round(percent_smoker,2))+"%, there are a total of "+ str(number_of_smokers)+ " smokers.")
+print('The percent of the people who identify as a nonsmoker is '+ str(round(percent_nonsmoker,2))+'%, there are a total of ' + str(number_of_nonsmokers) + " nonsmokers.")
 ```
 
 <p>Finds percentage of nonsmokers and smokers, as well as, how many are actually in insurance.csv.</p>
@@ -198,6 +204,8 @@ for region in regions:
             count += 1
     if count == 0:
         region_dict[region] = 0
+
+print(region_dict)  
 ```
 
 <p>Creates dictionary showing the 4 regions: northeast, northwest, southeast, and southwest</p>
@@ -230,12 +238,15 @@ print(insurance_master_list)
 ```
 sex_cost = {}
 sex_cost.update({'male':[],'female':[]})
+print(sex_cost)
 
 for patient in insurance_master_list:
     if patient[1] == 'female':
         sex_cost[patient[1]].append(patient[-1])
     else:
         sex_cost[patient[1]].append(patient[-1])
+
+print(sex_cost)
 ```
 
 <p>Makes a sex/cost dictionary where each key represents a list of costs.</p>
@@ -243,13 +254,14 @@ for patient in insurance_master_list:
 ```
 smoker_cost = {}
 smoker_cost.update({'yes':[],'no':[]})
+print(smoker_cost)
 
 for patient in insurance_master_list:
     if patient[4] == 'yes':
         smoker_cost[patient[4]].append(patient[-1])
     else:
         smoker_cost[patient[4]].append(patient[-1])
-
+print(smoker_cost)
 ```
 
 <p>Makes smoker status/cost dictionary where each key represents a list of costs.</p>
@@ -268,6 +280,8 @@ for sex in sex_cost.keys():
 male_average = male_total_cost / len(sex_cost['male'])
 female_average = female_total_cost / len(sex_cost['female'])
 
+print("The average insurance cost for smoker patients is "+ str(round(smoker_average,2))+'.')
+print('The average insurance cost for nonsmoker patients is ' + str(round(nonsmoker_average,2))+'.')
 ```
 
 <p>Finds the average cost of insurance charges for males and females.</p>
@@ -302,6 +316,7 @@ for region in region_dict:
             count += 1
             
     average = total_cost / count
+    print('The average insurance cost for the ' + region + ' region is '+ str(round(average,2))+'.')
 ```
 
 
