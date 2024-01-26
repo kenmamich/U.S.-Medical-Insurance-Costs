@@ -138,3 +138,29 @@ print(average_bmi(bmis))
 ```
 
 <p>The average BMI is 30.66.</p>
+
+```
+print(average_children(children))
+```
+
+<p>The average number of children per person is 1.09.</p>
+
+```
+#Finding total number male and female people in the data set as well has the percentage make up of the dataset for each sex.
+number_of_males = 0
+number_of_females = 0
+
+for sex in sexes:
+    if sex == 'male':
+        number_of_males += 1
+    else:
+        number_of_females += 1
+    
+percent_male = (number_of_males /  len(sexes)) * 100
+
+percent_female = (number_of_females / len(sexes)) * 100
+
+print('The percent of the people identifying as male is ' + str(round(percent_male,2)) +'% a total of '+ str(number_of_males) +' males in dataset.' )
+print('The percent of people identifying as female is '+ str(round(percent_female,2))+'% a total of ' + str(number_of_females) +' females in dataset.')
+```
+<
