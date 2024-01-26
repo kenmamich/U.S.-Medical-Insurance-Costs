@@ -268,7 +268,7 @@ female_average = female_total_cost / len(sex_cost['female'])
 ```
 
 <p>Finds the average cost of insurance charges for males and females.</p>
-<p>The average male cost is $13956.75 and the average female cost is $12569.58. On average according to the insurance.csv dataset males pay more than females.</p>
+<p>The average male cost is $13956.75 and the average female cost is $12569.58. On average, according to the insurance.csv dataset, males pay more than females.</p>
 
 ```
 smoker_total_cost = 0
@@ -287,4 +287,21 @@ nonsmoker_average = female_total_cost / len(smoker_cost['no'])
 ```
 
 <p>Finds the average cost of insurance charges for smokers and nonsmokers.</p>
+<p>The average nonsmoker cost is $7820.55 and the average smoker cost is $34433.55. On average, according to the insurance.csv dataset, smokers pay more than nonsmokers.</p>
+
+```
+for region in region_dict:
+    total_cost = 0
+    count = 0
+    for patient in insurance_master_list:
+        if patient[-2] == region:
+            total_cost += float(patient[-1])
+            count += 1
+            
+    average = total_cost / count
+```
+
+
+<p>Finds the average insurance charge for each region.</p>
+<p>The average insurance cost for the southwest region is $12346.94, southeast is $14735.41, northwest is $12417.58, and northeast is $13406.38. There does not appear to be too much of a difference between each region in terms of insurance costs. But, on average, according to insurance.csv, the southeast pays the most and the southwest pays the least.</p>
 
