@@ -220,12 +220,71 @@ for region in region_dict.keys():
 ```
 insurance_master_list = list(zip(ages,sexes,bmis,children,smoker_statuses,regions,insurance_charges))
 print(insurance_master_list)
-
 ```
 
 <p>Creates master patient list for further analysis.</p>
 
 ```
+sex_cost = {}
+sex_cost.update({'male':[],'female':[]})
+
+for patient in insurance_master_list:
+    if patient[1] == 'female':
+        sex_cost[patient[1]].append(patient[-1])
+    else:
+        sex_cost[patient[1]].append(patient[-1])
+```
+
+<p>Makes a sex/cost dictionary where each key represents a list of costs.</p>
 
 ```
+smoker_cost = {}
+smoker_cost.update({'yes':[],'no':[]})
+
+for patient in insurance_master_list:
+    if patient[4] == 'yes':
+        smoker_cost[patient[4]].append(patient[-1])
+    else:
+        smoker_cost[patient[4]].append(patient[-1])
+
+```
+
+<p>Makes smoker status/cost dictionary where each key represents a list of costs.</p>
+
+```
+male_total_cost = 0
+female_total_cost = 0
+
+for sex in sex_cost.keys():
+    for cost in sex_cost[sex]:
+        if sex == 'female':
+            female_total_cost += float(cost)
+        else:
+            male_total_cost += float(cost)
+            
+male_average = male_total_cost / len(sex_cost['male'])
+female_average = female_total_cost / len(sex_cost['female'])
+
+```
+
+<p>Finds the average cost of insurance charges for males and females.</p>
+<p>The average male cost is $13956.75 and the average female cost is $12569.58. On average according to the insurance.csv dataset males pay more than females.</p>
+
+```
+smoker_total_cost = 0
+nonsmoker_total_cost = 0
+
+#ident refers to identity as in smoker or not(yes or no).
+for ident in smoker_cost.keys():
+    for cost in smoker_cost[ident]:
+        if ident == 'yes':
+            smoker_total_cost += float(cost)
+        else:
+            nonsmoker_total_cost += float(cost)
+            
+smoker_average = male_total_cost / len(smoker_cost['yes'])
+nonsmoker_average = female_total_cost / len(smoker_cost['no'])
+```
+
+<p>Finds the average cost of insurance charges for smokers and nonsmokers.</p>
 
