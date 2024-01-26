@@ -160,5 +160,5 @@ percent_male = (number_of_males /  len(sexes)) * 100
 percent_female = (number_of_females / len(sexes)) * 100
 ```
 
-<p>Finds percentage of males and females, as well as, how many are actually in insurance.csv</p>
-<p>50.52% a total of 676 males and 49.48% a total of 662 females</p>
+<p>Finds percentage of males and females, as well as, how many are actually in insurance.csv.</p>
+<p>50.52% male and 49.48% female. A total of 676 males and 662 females. There are more males in the dataset than females.</p>
