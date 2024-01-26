@@ -185,3 +185,47 @@ percent_nonsmoker = (number_of_nonsmokers / len(smoker_statuses)) * 100
 
 <p>Finds percentage of nonsmokers and smokers, as well as, how many are actually in insurance.csv.</p>
 <p>insurance.csv is 79.52% nonsmokers and 20.48% smokers, a total of 1064 nonsmokers and 274 smokers.</p>
+
+```
+region_dict = {}
+for region in regions:
+    count = 0
+    for place in region_dict.keys():
+        if region == place: 
+            count += 1
+    if count == 0:
+        region_dict[region] = 0
+```
+
+<p>Creates dictionary showing the 4 regions: northeast, northwest, southeast, and southwest</p>
+
+```
+for region in region_dict.keys():
+    count = 0
+    for place in regions:
+        if region == place:
+            count+=1
+    region_dict[region] = count
+    
+print(region_dict)
+
+for region in region_dict.keys():
+    print(region + " has " + str(region_dict[region]) + " people in this dataset.")
+
+```
+
+<p>Loads the dictionary with number of people for each region and prints it out.</p>
+<p>325 people from southwest, 364 people from southeast, 325 people from northwest, and 324 people from northeast</p>
+
+```
+insurance_master_list = list(zip(ages,sexes,bmis,children,smoker_statuses,regions,insurance_charges))
+print(insurance_master_list)
+
+```
+
+<p>Creates master patient list for further analysis.</p>
+
+```
+
+```
+
